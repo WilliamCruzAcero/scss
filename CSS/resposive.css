@@ -1,0 +1,331 @@
+
+
+@media screen and (max-width: 600px){
+   
+   
+    /* index */    
+    .encabezado{
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to left,black, rgb(47, 42, 42), rgb(180, 110, 110));
+        color: yellow;
+    }   
+    .encabezado__menu li{
+        background-color: transparent;
+        width: auto;    
+        text-align: left;
+    
+    }
+    .encabezado__menu li a{
+        color: yellow;
+        font-size: 15px;
+        
+    }
+    .encabezado__menu li a:hover{
+        box-shadow: 3px 5px 7px whitesmoke;
+    }
+    .main{ 
+        width: 100%;  
+        height: auto;
+        font-size: 10px;
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
+        text-align: center;
+        display: block;
+       
+    }
+    .main__imagen h2{
+        font-size: 15px;
+        color: black;
+    }
+    .main__imagen img{
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .main__info {
+        margin: 15px;
+        text-align: left;
+        font-size: 15px;
+    }
+    .main__info h2{
+        display: none;
+    }
+    .main__info p{
+        display: none;
+    }
+    .main__link img{
+        width: 100%;
+        height: 100%;
+    }
+    .main__link img:hover{
+       width: 100%;
+       height: 100%;
+       margin: 0;
+    }
+    
+    .main__iframe{
+        width: 100%;
+        height: 100%;
+    }
+    .main__calificacion img{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .main__calificacion a {
+           color: blue;
+    }
+    .pie{
+        width: 100%;
+        background: linear-gradient(to left,black, rgb(47, 42, 42), rgb(180, 110, 110));
+        font-size: 10px;
+        
+    }
+    .pie__titulo{
+        text-align: center;
+        color: yellow;
+    }
+    .pie__titulo p {
+        padding: 10px;
+    }
+    .pie__redes {
+        padding: 15px;    
+        margin: 15px;
+        text-align: center;    
+    }
+    .pie__redes img{
+        width: 50px;
+    }
+    /* comentarios */
+    .comentario{
+        width: 100%;
+        font: size 10px;
+        padding: 15px;
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
+        text-align: center; 
+    }
+    .comentario p{
+        text-align: left;
+        padding: 15px;
+    }
+    .comentario__texto textarea:focus{
+        padding: 50px;
+        background-color: aqua;
+        width: 400px;
+        height: 300px;
+    }
+    /* como llegar */
+    .llegar{
+        width: 100%;
+        padding: 15px;
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
+    }   
+    .llegar__imagen img{
+        padding: 15px;
+       
+    }
+    .llegar__texto p{
+        font-size: 15px;
+        text-align: left;
+    }
+    /* manu */
+    .platos{
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
+        color: black;
+    }
+    .platos h2{
+        color: black;
+    }
+    .lista__carne img{
+        width: 180px;
+        height: auto
+    }
+    .lista__pechuga img{
+        width: 180px;
+        height: auto
+    }
+    .platos__titulo img{
+        display: none;
+    }
+    .lista__ensalada img{
+        width: 180px;
+        height: auto;
+    }
+    .bebidas{
+        padding: 15px;
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
+    }
+    .bebidas__titulo{
+        font-size: 15px;
+        padding: 15px;
+        color: black;
+    }
+    .bebidas__titulo img{
+        display: none;
+    }
+    .lista__gaseosa{
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .lista__gaseosa li{
+        list-style: none;
+    }
+    .lista__gaseosa img{
+        width: 180px;
+        height: auto;
+    }
+    .lista__jugos{
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .lista__jugos li{
+        list-style: none;
+    }
+    .lista__jugos img{
+        width: 180px;
+        height: auto;
+    }
+    .lista__cerveza{
+        margin: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .lista__cerveza li{
+        list-style: none;
+    }
+    .lista__cerveza img{
+        width: 180px;
+        height: auto;
+    }
+    /* quienes somos */
+    .somos{   
+        font-size: 15px;
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
+    }
+    .somos__titulo p{
+        text-align: left;
+    }
+    .somos__presentacion{       
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
+        display: block;
+        padding: 0;
+        
+    }
+    .presentacion__imagen{
+        box-shadow: none;
+        margin-bottom: 0;
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
+    }
+    .presentacion__imagen:nth-child(1):hover{
+        width: 100%;
+       height: 100%;
+       margin: 0;
+       box-shadow: none;
+       z-index: o;
+    }
+    .presentacion__imagen:nth-child(2):hover{
+        width: 100%;
+       height: 100%;
+       margin: auto;
+       box-shadow: none;
+       z-index: o;
+    }
+    .presentacion__imagen:nth-child(3):hover{
+        width: 100%;
+       height: 100%;
+       margin: 0;
+    }
+    .presentacion__imagen:nth-child(4):hover{
+        width: 100%;
+       height: 100%;
+       margin: 0;
+    }
+    .presentacion__imagen:nth-child(5):hover{
+        width: 100%;
+       height: 100%;
+       margin: 0;
+    }
+    
+    /* reservacion */
+    .reserva{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        background:linear-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));
+        text-align: center;    
+        display: block;
+    } 
+    .reserva__titulo h2{
+        color: black;
+    } 
+    .reserva__info{
+        padding: 15px;
+    }
+    /* suscribirse */
+    .formulario{
+        padding: 0%;
+        
+    }
+    .registro{
+        width: 100%;
+        height: auto;
+        background:radial-gradient( rgb(113, 122, 99),rgb( 136, 156, 105),rgb(122, 127, 103));   
+    }
+    .control{
+        background-color: rgb(69, 151, 124);
+        
+    }
+    .control:focus{
+        background-color: white;
+    }
+   
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
