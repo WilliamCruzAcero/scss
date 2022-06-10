@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.agrupar{
+    width: 100%; 
+    height: auto;
+    text-align: center;
+
+    @import "header";
+    @import "footer";
+
+   
+        @keyframes cambio{
+            0%{margin-left: 0%;}
+            20%{margin-left: 0%;}
+        
+            25%{margin-left: -100%;}
+            45%{margin-left: -100%;}
+        
+            50%{margin-left: -200%;}
+            75%{margin-left: -200%;}
+        
+            80%{margin-left: -300%;}
+            100%{margin-left: -300%;}
+        
+            }   
+        .main{
+            width: 100%;
+            height: auto;
+            
+            font-size: 15px;
+            background:linear-gradient(rgb(99, 188, 226),rgb(95, 231, 169),rgb(15, 250, 143));
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            text-align: justify;
+           
+            .main__slaider {
+                width: 95%;
+                margin: auto;
+                overflow: hidden;
+                
+                grid-column: 1/3;
+                grid-row: 1/2;
+
+                ul {   
+                    display: flex;
+                    padding: 0;
+                    width: 400%;
+                    animation: cambio 20s infinite alternate;
+
+                    li {
+                        width: 100%;
+                        list-style: none;
+                            
+                        img {
+                            width: 100%;
+                            height: 400px;
+                        }
+
+                        
+                    }
+                    
+                }
+            }
+
+            .main__info{
+                padding: 20px;
+                width: 100%;
+                max-height: 250px;
+                grid-column: 1/2;
+                grid-row: 2/3;
+
+                h2{
+                    text-align: center;                    
+                }
+                
+                p{
+                    width: 100%;   
+                    font-size: 20px;
+                    text-align: left;
+                    padding: 15px;
+                }
+   
+            }
+            .main__link{ 
+                padding: 20px;
+                width: 100%;  
+                grid-column: 2/3;
+                grid-row: 2/3;
+
+                img{
+                    
+                    width: 100%;   
+                    max-height: 250px;
+                    border-radius: 5px;
+
+                    &:hover{
+                        box-shadow: 0 0 30px black;
+                    }
+                }
+
+
+            }
+            .main__iframe{
+                width: 100%;
+                height: auto;
+                padding: 0 20px;
+                grid-column: 1/2;
+                grid-row: 3/4;
+
+                iframe{
+                    width: 100%;
+                    height: 250px;
+                }
+            }
+            .main__imagen{
+                width: 100%;
+                grid-column: 2/3;
+                grid-row: 3/4;
+                
+                img{
+                    width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                }
+            }
+            .main__calificacion{
+                padding: 20px;
+                width: 100%;
+                height: auto;
+                text-align: center;
+                grid-column: 1/3;
+                grid-row: 4/5;
+
+
+            
+            }
+        }
+
+        .somos{
+            width: 100%;
+            background:linear-gradient(rgb(99, 188, 226),rgb(95, 231, 169),rgb(15, 250, 143));
+            font-size: 20px;
+
+            .somos__titulo{
+                font-size: 15px;
+
+                h2{
+                    text-align: center;
+                    padding: 15px;
+                    color: blue;
+                }
+                p{
+                    padding: 10px;
+                    text-align: justify; 
+                }
+            }
+            .somos__presentacion{
+                width: 100%;
+                height: auto;    
+                gap: 15px;
+                padding: 25px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                
+                .presentacion__imagen{
+                    width: 100%; 
+                    height: 100%; 
+                    background:linear-gradient(rgb(99, 188, 226),rgb(95, 231, 169),rgb(15, 250, 143)); 
+                    font-size: 15px;
+                    gap: 15px;
+                    margin-bottom: 15px;
+                    color: rgb(100, 29, 29);
+                    box-shadow: 3px 5px 7px #000;
+                    text-align: justify center;
+                    padding: 5px; 
+                    
+                    img{
+                        width: 100%;
+                        height: 80%;
+                        
+                       
+                    }
+                
+                }
+                .presentacion__imagen:nth-child(1):hover{
+                    width: 150%;
+                    margin: 0% -70% -100% 0%;
+                    z-index: 10;
+                    box-shadow: 3px 5px 7px white;
+                }
+                .presentacion__imagen:nth-child(2):hover{
+                    width: 150%;
+                    margin: 0% -75% -100% -25%;
+                    z-index: 20;
+                    box-shadow: 3px 5px 7px white;
+                }
+                .presentacion__imagen:nth-child(3):hover{
+                    width: 150%;
+                    margin: 0% -100% -50% -50%;
+                    z-index: 30;
+                    box-shadow: 3px 5px 7px white;
+                }
+                .presentacion__imagen:nth-child(4):hover{
+                    width: 150%;
+                    margin: 0% -100% -100% 0%;
+                    z-index: 40;
+                    box-shadow: 3px 5px 7px white;
+                }
+                .presentacion__imagen:nth-child(5):hover{
+                    width: 150%;
+                    margin: 0 -50% -100% -25%;
+                    z-index: 50;
+                    box-shadow: 3px 5px 7px white;
+                }
+                
+
+            }
+        }
+        .comentario{
+            padding: 20px;
+            background:linear-gradient(rgb(99, 188, 226),rgb(95, 231, 169),rgb(15, 250, 143));
+            float: left;
+
+            .comentario__titulo{
+                display: block;
+                float: left;
+                
+                h2{
+                    color: blue;
+                    font-size: 20px;
+                }
+                p{
+                    padding: 20px;
+                    text-align: justify;
+                }
+            }
+            .comentario__texto{
+                margin: 25px;
+
+               textarea{
+                    padding: 5px;
+                    background-color: aquamarine;
+                    box-shadow: 0 0 20px #000;
+                    border-radius: 5px;
+                    border: 1px solid #000;
+
+                    &:focus{
+                        padding: 50px;
+                        background-color: aqua;
+                        width: 400px;
+                        height: 300px;
+                    }
+                }
+                input{
+                    background-color:rgb(15, 250, 143);
+                    width: 70px;
+                    box-shadow: 0 0 20px #000;
+                    border-radius: 7px;
+                    font-size: 12px;
+                }    
+
+              
+            }
+        }
+        .menu{
+            width: 100%;    
+            background:linear-gradient(rgb(99, 188, 226),rgb(95, 231, 169),rgb(15, 250, 143));
+        
+            .platos__titulo{
+                padding: 15px;
+                
+                h2{
+                    text-align: center;
+                    color: blue;
+                }
+                img{
+                    margin-top: 20px;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px #000;
+                }
+            }
+            .platos__lista{
+                font-size: 15px;
+
+                .lista__carne{
+                    padding: 10px;
+                    display: flex; 
+                    justify-content: space-around;
+                    
+                    li{
+                        padding: 20px;
+                        list-style: none;
+                        margin: 5px; 
+                        text-align: left;
+                    }
+                    h3{
+                        color: blue;
+                    }
+                    img{
+                        padding: 10px;
+                        width: 250px;
+                        height: auto;
+                    }
+                }
+                .lista__pechuga{
+                    padding: 10px;
+                    display: flex; 
+                    justify-content: space-around;
+                    
+                    li{
+                        padding: 20px;
+                        list-style: none;
+                        margin: 5px; 
+                        text-align: left;
+                    }
+                    h3{
+                        color: blue;
+                    }
+                    img{
+                        padding: 10px;
+                        width: 250px;
+                        height: auto;
+                    }
+                }
+                .lista__ensalada{
+                    padding: 10px;
+                    display: flex; 
+                    justify-content: space-around;
+                    
+                    li{
+                        padding: 20px;
+                        list-style: none;
+                        margin: 5px; 
+                        text-align: left;
+                    }
+                    h3{
+                        color: blue;
+                    }
+                    img{
+                        padding: 10px;
+                        width: 250px;
+                        height: auto;
+                    }
+                }
+            }
+            .bebidas__titulo{
+                padding: 15px;
+                
+                h2{
+                    text-align: center;
+                    color: blue;
+                }
+                img{
+                    margin-top: 20px;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                    box-shadow: 0 0 10px #000;
+                }
+            }
+            .bebidas__lista{
+                font-size: 15px;
+
+                .lista__gaseosa{
+                    padding: 10px;
+                    display: flex; 
+                    justify-content: space-around;
+                    
+                    li{
+                        padding: 20px;
+                        list-style: none;
+                        margin: 5px; 
+                        text-align: left;
+                    }
+                    h3{
+                        color: blue;
+                    }
+                    img{
+                        padding: 10px;
+                        width: 250px;
+                        height: auto;
+                    }
+                }
+                .lista__jugos{
+                    padding: 10px;
+                    display: flex; 
+                    justify-content: space-around;
+                    
+                    li{
+                        padding: 20px;
+                        list-style: none;
+                        margin: 5px; 
+                        text-align: left;
+                    }
+                    h3{
+                        color: blue;
+                    }
+                    img{
+                        padding: 10px;
+                        width: 250px;
+                        height: auto;
+                    }
+                }
+                .lista__cerveza{
+                    padding: 10px;
+                    display: flex; 
+                    justify-content: space-around;
+                    
+                    li{
+                        padding: 20px;
+                        list-style: none;
+                        margin: 5px; 
+                        text-align: left;
+                    }
+                    h3{
+                        color: blue;
+                    }
+                    img{
+                        padding: 10px;
+                        width: 250px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+
+
+
+
+}
