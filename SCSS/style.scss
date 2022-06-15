@@ -4,7 +4,7 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-
+@import "variables";
 .agrupar{
     width: 100%; 
     height: auto;
@@ -12,7 +12,7 @@
 
     @import "header";
     @import "footer";
-
+    
    
         @keyframes cambio{
             0%{margin-left: 0%;}
@@ -33,7 +33,7 @@
             height: auto;
             
             font-size: 15px;
-            background:linear-gradient(rgb(99, 188, 226),rgb(95, 231, 169),rgb(15, 250, 143));
+            /* background:linear-gradient(rgb(99, 188, 226),rgb(95, 231, 169),rgb(15, 250, 143)); */
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr;
@@ -527,7 +527,7 @@
                 box-shadow: 0 0 7px #000;
                 border-radius: 5px;
 
-                h1{
+                h2{
                     margin-top: 15px;
                     color: blue;
                 }

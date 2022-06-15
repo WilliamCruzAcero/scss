@@ -1,0 +1,55 @@
+/* each */
+@each $background in red, green, black, {
+   .bg-#{$background}{background:$background;}
+}
+
+/* extend */
+
+.btn{
+    width: 100%;
+    height: auto;
+    gap: 15px;
+    border-radius: 5px;
+    background: transparent;
+    display: inline;
+    text-align: left;
+    box-shadow: 3px 5px 7px #000;
+}
+
+.btn--verde{
+    @extend .btn;
+    background: green;
+}
+.btn--rojo{
+    @extend .btn;
+    background: red;
+}
+.btn--amarillo{
+    @extend .btn;
+    background: yellow;
+}
+.btn--aqua{
+    @extend .btn;
+    background: aqua;
+}
+
+
+/* mixins */
+@mixin boton {
+    width: 100%;
+    height: auto;
+    gap: 15px;
+    border-radius: 5px;
+    background: transparent;
+    display: inline;
+    text-align: left;
+    box-shadow: 3px 5px 7px #000;
+    
+    
+}
+.boton--alert{
+    @include boton;
+    background: tomato ;
+}
+
+   
