@@ -2,7 +2,6 @@
 $rellenoHeader: linear-gradient(to right,rgb(151, 177, 200),rgb(50, 118, 178),rgb(7, 61, 108));
 .encabezado{        
     font-size: 15px;
-   
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -47,6 +46,14 @@ $rellenoHeader: linear-gradient(to right,rgb(151, 177, 200),rgb(50, 118, 178),rg
             margin-bottom: 15px;
 
             & li{
+                width: 100%;
+                height: auto;
+                gap: 15px;
+                border-radius: 5px;
+                background: transparent;
+                display: inline;
+                text-align: left;
+                box-shadow: 3px 5px 7px #000;
                              
                
                 &:hover{
@@ -57,7 +64,7 @@ $rellenoHeader: linear-gradient(to right,rgb(151, 177, 200),rgb(50, 118, 178),rg
                 a{
                     text-decoration: none;
                     color: black;
-                    font-size: 12px;
+                    font-size: 15px;
                     padding: 5px;
                   
                     &:hover{
@@ -69,11 +76,3 @@ $rellenoHeader: linear-gradient(to right,rgb(151, 177, 200),rgb(50, 118, 178),rg
         }      
     }    
 }
-/* width: 100%;
-height: auto;
-gap: 15px;
-border-radius: 5px;
-background: transparent;
-display: inline;
-text-align: left;
-box-shadow: 3px 5px 7px #000; */

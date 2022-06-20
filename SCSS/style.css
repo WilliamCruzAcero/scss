@@ -6,74 +6,10 @@
           box-sizing: border-box;
 }
 
-/* each */
-.bg-red {
-  background: red;
-}
-
-.bg-green {
-  background: green;
-}
-
-.bg-black {
-  background: black;
-}
-
-/* extend */
-.btn, .btn--verde, .btn--rojo, .btn--amarillo, .btn--aqua {
-  width: 100%;
-  height: auto;
-  gap: 15px;
-  border-radius: 5px;
-  background: transparent;
-  display: inline;
-  text-align: left;
-  -webkit-box-shadow: 3px 5px 7px #000;
-          box-shadow: 3px 5px 7px #000;
-}
-
-.btn--verde {
-  background: green;
-}
-
-.btn--rojo {
-  background: red;
-}
-
-.btn--amarillo {
-  background: yellow;
-}
-
-.btn--aqua {
-  background: aqua;
-}
-
-/* mixins */
-.boton--alert {
-  width: 100%;
-  height: auto;
-  gap: 15px;
-  border-radius: 5px;
-  background: transparent;
-  display: inline;
-  text-align: left;
-  -webkit-box-shadow: 3px 5px 7px #000;
-          box-shadow: 3px 5px 7px #000;
-  background: tomato;
-}
-
 .agrupar {
   width: 100%;
   height: auto;
   text-align: center;
-  /* width: 100%;
-height: auto;
-gap: 15px;
-border-radius: 5px;
-background: transparent;
-display: inline;
-text-align: left;
-box-shadow: 3px 5px 7px #000; */
 }
 
 .agrupar .encabezado {
@@ -148,6 +84,18 @@ box-shadow: 3px 5px 7px #000; */
   margin-bottom: 15px;
 }
 
+.agrupar .encabezado .encabezado__menu ul li {
+  width: 100%;
+  height: auto;
+  gap: 15px;
+  border-radius: 5px;
+  background: transparent;
+  display: inline;
+  text-align: left;
+  -webkit-box-shadow: 3px 5px 7px #000;
+          box-shadow: 3px 5px 7px #000;
+}
+
 .agrupar .encabezado .encabezado__menu ul li:hover {
   -webkit-box-shadow: 3px 5px 7px white;
           box-shadow: 3px 5px 7px white;
@@ -157,7 +105,7 @@ box-shadow: 3px 5px 7px #000; */
 .agrupar .encabezado .encabezado__menu ul li a {
   text-decoration: none;
   color: black;
-  font-size: 12px;
+  font-size: 15px;
   padding: 5px;
 }
 
@@ -286,7 +234,8 @@ box-shadow: 3px 5px 7px #000; */
   width: 100%;
   height: auto;
   font-size: 15px;
-  /* background:linear-gradient(rgb(99, 188, 226),rgb(95, 231, 169),rgb(15, 250, 143)); */
+  background: -webkit-gradient(linear, left top, left bottom, from(#63bce2), color-stop(#5fe7a9), to(#0ffa8f));
+  background: linear-gradient(#63bce2, #5fe7a9, #0ffa8f);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
